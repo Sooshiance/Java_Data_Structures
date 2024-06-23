@@ -1,11 +1,13 @@
 public class Array_Main
 {
+    // Representing
     static void showArray(int arr[])
     {
         for (int i = 0; i < arr.length; i++) 
             System.out.println(arr[i]);
     }
     
+    // Searching
     static int findElement(int arr[], int n, int key)
     {
         for (int i = 0; i < n; i++)
@@ -13,6 +15,25 @@ public class Array_Main
                 return i;
 
         return -1;
+    }
+
+    // Appending
+    static int insertSorted(int arr[], int n, int key, int capacity)
+    {
+        if (n >= capacity)
+            return n;
+
+        arr[n] = key;
+
+        return (n + 1);
+    }
+
+    // Inserting an element at any position
+    static void insertElement(int arr[], int n, int x, int pos)
+    {
+        for (int i = n - 1; i >= pos; i--)
+            arr[i + 1] = arr[i];
+        arr[pos] = x;
     }
 
     public static void main(String args[])
