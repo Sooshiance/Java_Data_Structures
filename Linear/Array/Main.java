@@ -6,8 +6,14 @@ public class Main
     {
         // Defining Arrays : 
         // sorted
-        int sort = new int [0,1,2,3,4,5,6,7,8,9];
+        int[] sort = new int[20];
         // unsorted
-        int unsort = new int [12,6,41,-2,50,0,24,15,9,35];
+        int[] unsort = new int[20];
+
+        Unsorted.showArray(unsort, 10);
+        System.out.println(Unsorted.findElement(unsort, 10, 41));
+        System.out.println(Unsorted.insertSorted(unsort, 10, 34, 10));
+        Unsorted.insertElement(unsort, 10, 23, 10);
+        System.out.println(Unsorted.deleteElement(unsort, 10, 60));
     }
 }
