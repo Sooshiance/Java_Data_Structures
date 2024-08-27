@@ -6,7 +6,7 @@ class Main
     {
         String string1 = new String("Mehdi Davari");
         String string2 = new String("Programmer");
-        String string3 = new String("Mehdi");
-        String string4 = new String("Mehdi");
+        String string3 = "Mehdi ";
+        String string4 = "Davari";
     }
 }
