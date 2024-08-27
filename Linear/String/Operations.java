@@ -1,6 +1,6 @@
 package String;
 
-class Operations
+public class Operations
 {
     public static void accessByIndex(String str, int k) {
 
