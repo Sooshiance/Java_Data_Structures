@@ -2,6 +2,12 @@ package Array;
 
 public class Sorted
 {
+    static void showArray(int arr[], int n)
+    {
+        for(int i=0; i < n; i++)
+            System.out.println(arr[i]);
+    }
+
     static int binarySearch(int arr[], int low, int high, int key)
     {
         if (high < low)
